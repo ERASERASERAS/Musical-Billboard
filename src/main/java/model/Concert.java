@@ -3,15 +3,17 @@ package model;
 import java.util.Date;
 
 public class Concert {
-    private int id,artistId, concertHallId, promotionGroupId;
+    private int id,artistId, concertHallId, promotionGroupId, ageConstraint;
     private Date concertDate;
+    private String descriprion;
 
-    public Concert(int id, int artistId, int concertHallId, int promotionGroupId, Date concertDate) {
+    public Concert(int id, int artistId, int concertHallId, int promotionGroupId, Date concertDate, int ageConstraint) {
         this.id = id;
         this.artistId = artistId;
         this.concertHallId = concertHallId;
         this.promotionGroupId = promotionGroupId;
         this.concertDate = concertDate;
+        this.ageConstraint = ageConstraint;
     }
 
     public int getId() {
@@ -54,5 +56,24 @@ public class Concert {
         this.concertDate = concertDate;
     }
 
+    public int getAgeConstraint() {
+        return ageConstraint;
+    }
 
+    public void setAgeConstraint(int ageConstraint) {
+        this.ageConstraint = ageConstraint;
+    }
+
+    public String getDescriprion() {
+        return descriprion;
+    }
+
+    public void setDescriprion(String descriprion) {
+        this.descriprion = descriprion;
+    }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

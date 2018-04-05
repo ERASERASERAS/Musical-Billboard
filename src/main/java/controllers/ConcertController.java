@@ -12,7 +12,11 @@ public class ConcertController {
     }
 
     public List<Concert> getConcertsByArtist(String artistName) {
+        return DAOFactory.getINSTANCE().getConcertDAO().getConcertByArtist(artistName);
+    }
 
+    public List<Concert> getConcertsByConcertHall(int concertHallId) {
+        return DAOFactory.getINSTANCE().getConcertDAO().getConcertByConcertHall(concertHallId);
     }
 
 }

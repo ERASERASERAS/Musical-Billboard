@@ -51,4 +51,9 @@ public class Ticket {
         this.cost = cost;
         this.category = category;
     }
+
+
+    public String toString() {
+        return "";
+    }
 }

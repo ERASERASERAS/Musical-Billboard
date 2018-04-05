@@ -14,4 +14,6 @@ public interface ConcertDAO {
 
     List<Concert> getConcertsByDate(Date date);
     List<Concert> getConcertByArtist(String artistName);
+
+    List<Concert> getConcertByConcertHall(int concertHallId) ;
 }
