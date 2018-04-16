@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="musical_billboard:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="musical_billboard-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="musical_billboard:war exploded" />
+    </root>
+  </artifact>
+</component>
