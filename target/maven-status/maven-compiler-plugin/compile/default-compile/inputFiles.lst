@@ -9,9 +9,11 @@ C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCPurchaseDAO.j
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\LoginServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\HomeServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\TicketDAO.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\ConcertDescription.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\ArtistController.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCPromotionGroupDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\ConcertDAO.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\ConcertServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Purchase.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\TicketController.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCUserDAO.java

@@ -18,7 +18,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()) {
                 returnedConcert = new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                                                resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6));
+                                                resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -35,7 +35,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6)));
+                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -57,7 +57,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6)));
+                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -73,7 +73,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = statement.executeQuery("SELECT * FROM concert");
             while(resultSet.next()) {
                 returned.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6)));
+                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7), resultSet.getString(6)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -95,7 +95,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6)));
+                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
             }
 
         } catch (SQLException e) {
@@ -114,7 +114,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6)));
+                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
             }
         } catch (SQLException e) {
             e.printStackTrace();

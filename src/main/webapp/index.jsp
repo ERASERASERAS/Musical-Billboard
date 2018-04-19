@@ -20,7 +20,7 @@
 
     
         <c:forEach items="${concerts}" var="concert">
-
+            <p><a href="/concert?id=${concert.getId()}">${concert.getConcertDate()}</a></p>
         </c:forEach>
 
 

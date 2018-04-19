@@ -11,6 +11,7 @@ com\ssau\model\Purchase.class
 com\ssau\dao\TicketDAO.class
 com\ssau\servlets\MainServlet.class
 com\ssau\dao\jdbc\JDBCConcertDAO.class
+com\ssau\model\ConcertDescription.class
 com\ssau\dao\jdbc\JDBCTicketDAO.class
 com\ssau\model\Concert.class
 com\ssau\dao\ArtistDAO.class
@@ -26,6 +27,7 @@ com\ssau\dao\ConcertDAO.class
 com\ssau\model\Artist.class
 com\ssau\controllers\PromoGroupController.class
 com\ssau\dao\PurchaseDAO.class
+com\ssau\servlets\ConcertServlet.class
 com\ssau\controllers\ConcertHallController.class
 com\ssau\dao\UserDAO.class
 com\ssau\model\User.class

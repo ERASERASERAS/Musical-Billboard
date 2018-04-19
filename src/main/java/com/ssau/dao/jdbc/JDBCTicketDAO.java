@@ -16,12 +16,9 @@ public class JDBCTicketDAO implements TicketDAO {
         return null;
     }
 
-    @Override
-    public List<Ticket> getTicketsByConcert(int concertId) {
-        return null;
-    }
 
-    public List<Ticket> getTicketsByConcertId(int concertId) {
+
+    public List<Ticket> getTicketsByConcert(int concertId) {
         List<Ticket> returned = new LinkedList<Ticket>();
         try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM ticket WHERE concert_id = ?");

@@ -7,13 +7,14 @@ public class Concert {
     private Date concertDate;
     private String descriprion;
 
-    public Concert(int id, int artistId, int concertHallId, int promotionGroupId, Date concertDate, int ageConstraint) {
+    public Concert(int id, int artistId, int concertHallId, int promotionGroupId, Date concertDate, int ageConstraint, String descriprion) {
         this.id = id;
         this.artistId = artistId;
         this.concertHallId = concertHallId;
         this.promotionGroupId = promotionGroupId;
         this.concertDate = concertDate;
         this.ageConstraint = ageConstraint;
+        this.descriprion = descriprion;
     }
 
     public int getId() {
