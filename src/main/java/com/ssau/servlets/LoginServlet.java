@@ -21,18 +21,18 @@ public class LoginServlet extends HttpServlet{
 
             if(req.getParameter("doLogin") != null && checkLogIn(login, password)) {
                 User user = DAOFactory.getINSTANCE().getUserDAO().getUserByLogin(login);
+                String s = req.getContextPath();
                 req.getSession().setAttribute("user", user);
-                resp.sendRedirect("/billboard/hello.jsp");
+                resp.sendRedirect("/");
             } else if (req.getParameter("doRegister") != null && checkRegistration(login,password)) {
-                DAOFactory.getINSTANCE().getUserDAO().addUser(8,login, password, "USER");
-                //todo исправить добавление (id)
-                resp.sendRedirect("index.jsp");
+                 DAOFactory.getINSTANCE().getUserDAO().addUser(9,login, password, "USER");
+                //todo исправить добавление (id)  и скрипт с уведомлениями об авторизации и регистрации identity в бд на pk
+                resp.sendRedirect("/");
             }
             else {
                 req.getSession().setAttribute("loginFailed", true);
-                resp.sendRedirect("index.jsp");
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("fgfgf.jsp");
-                requestDispatcher.forward(req, resp);
+                //resp.sendRedirect("index.jsp");
+                resp.sendRedirect("/");
             }
 
 
@@ -45,7 +45,8 @@ public class LoginServlet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException  {
-        resp.sendRedirect(req.getContextPath() + "/login.jsp");
+        req.getRequestDispatcher("login.jsp").forward(req,resp);
+
     }
 
     public boolean checkValidation(String login, String password) {

@@ -19,6 +19,7 @@ public class JDBCDAOFactory extends DAOFactory{
         dataSource.setUser("postgres");
         dataSource.setPassword("eras1996wwbpo");
         dataSource.setMaxConnections(10);
+
     }
 
     public ArtistDAO getArtistDAO() {

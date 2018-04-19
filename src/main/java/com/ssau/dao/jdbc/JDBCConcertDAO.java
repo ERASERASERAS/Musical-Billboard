@@ -4,10 +4,7 @@ import com.ssau.dao.ConcertDAO;
 import com.ssau.dao.DAOFactory;
 import com.ssau.model.Concert;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -66,6 +63,22 @@ public class JDBCConcertDAO implements ConcertDAO {
             e.printStackTrace();
         }
         return returnedConcerts;
+    }
+
+    @Override
+    public List<Concert> getAll() {
+        List<Concert> returned = new LinkedList<Concert>();
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM concert");
+            while(resultSet.next()) {
+                returned.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
+                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(6)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  returned;
     }
 
     @Override

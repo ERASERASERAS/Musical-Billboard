@@ -1,20 +1,36 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>INDEX</title>
 </head>
 <body>
-<h1>HELLO NEZNAKOMETS</h1> <br/>
-    <a href="/login">АВТОРИЗАЦИЯ/РЕГИСТРАЦИЯ</a>
+    <c:if test="${user == null}">
+        <span class="top-span">
+            <a class="top-span-login-link" href="/login">Войти</a>
+            <a class="top-span-login-link" href="/login">Регистрация</a>
+        </span>
+    </c:if>
 
-    <%! int i = 3;%>
+    <c:if test="${user != null}">
+        <span>
+            <a href="/login/?logout=true">Выход</a>
+        </span>
+    </c:if>
 
-    <% for(int j =0; j < i; j++)
-        out.println(j + "\n");
-        out.newLine();
-        out.println("<br/>");
-        out.write("<br/>");
-    %>
+    
+        <c:forEach items="${concerts}" var="concert">
+
+        </c:forEach>
+
+
+
+
+
+
+
+
+
 
 
 </body>
