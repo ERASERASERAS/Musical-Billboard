@@ -16,8 +16,8 @@
         Password: <input type="password" name="password" /> <br/>
         <input type="submit" value="Login" name="doLogin"/>
         <input type="submit" value="Register" name="doRegister">
-
     </form>
+
 
 </body>
 </html>

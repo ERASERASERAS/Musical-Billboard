@@ -14,14 +14,17 @@
 
     <c:if test="${user != null}">
         <span>
-            <a href="/login/?logout=true">Выход</a>
+            <a href="/login?logout=true">Выход</a>
         </span>
     </c:if>
 
     
-        <c:forEach items="${concerts}" var="concert">
-            <p><a href="/concert?id=${concert.getId()}">${concert.getConcertDate()}</a></p>
-        </c:forEach>
+    <c:forEach items="${concerts}" var="concert">
+        <p><a href="/concert?id=${concert.getId()}">${concert.getConcertDate()}</a></p>
+    </c:forEach>
+
+
+
 
 
 
