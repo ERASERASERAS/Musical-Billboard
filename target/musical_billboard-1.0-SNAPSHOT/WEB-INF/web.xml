@@ -11,6 +11,38 @@
     </servlet>
     
     <servlet>
+        <servlet-name>PromoGroupServlet</servlet-name>
+        <servlet-class>com.ssau.servlets.PromoGroupServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PromoGroupServlet</servlet-name>
+        <url-pattern>/promogroup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConcertHallServlet</servlet-name>
+        <servlet-class>com.ssau.servlets.ConcertHallServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConcertHallServlet</servlet-name>
+        <url-pattern>/concerthall</url-pattern>
+    </servlet-mapping>
+    
+   <servlet>
+       <servlet-name>PurchaseServlet</servlet-name>
+       <servlet-class>com.ssau.servlets.PurchaseServlet</servlet-class>
+   </servlet>
+    
+    
+    <servlet-mapping>
+        <servlet-name>PurchaseServlet</servlet-name>
+        <url-pattern>/purchase</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
         <servlet-name>MainServlet</servlet-name>
         <servlet-class>com.ssau.servlets.MainServlet</servlet-class>
     </servlet>
@@ -37,7 +69,7 @@
     
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
-        <url-pattern>/home</url-pattern>
+        <url-pattern>/billboard/home</url-pattern>
     </servlet-mapping>
 
     <filter>
@@ -60,6 +92,26 @@
         <filter-name>LoginFilter</filter-name>
         <url-pattern>/billboard/*</url-pattern>
     </filter-mapping>
+
+    <filter>
+        <filter-name>StatusFilter</filter-name>
+        <filter-class>com.ssau.filter.StatusFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>StatusFilter</filter-name>
+        <url-pattern>/billboard/admin/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>UpdServlet</servlet-name>
+        <servlet-class>com.ssau.servlets.UpdServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdServlet</servlet-name>
+        <url-pattern>/billboard/admin/update</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>

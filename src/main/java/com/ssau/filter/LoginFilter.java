@@ -24,7 +24,7 @@ public class LoginFilter implements Filter{
         if(user != null && !user.getLogin().equals(null)) {
             filterChain.doFilter(request, response);
         } else {
-            response.sendRedirect(request.getContextPath() + "/index.jsp");
+            response.sendRedirect(request.getContextPath() + "/");
         }
     }
 

@@ -14,7 +14,7 @@ public abstract class DAOFactory {
 
 
 
-    public abstract ArtistDAO getArtistDAO();
+
 
     public abstract ConcertDAO getConcertDAO();
 
@@ -25,6 +25,8 @@ public abstract class DAOFactory {
     public abstract TicketDAO getTicketDAO();
 
     public abstract  UserDAO getUserDAO();
+
+    public abstract  PurchaseDAO getPurchaseDAO();
 
     public abstract Connection getConnection() throws SQLException;
 

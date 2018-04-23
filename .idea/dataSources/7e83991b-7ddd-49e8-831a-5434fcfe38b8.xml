@@ -18,8 +18,8 @@
     </database>
     <schema id="6" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-04-19.21:01:46.258</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1173</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-04-23.19:45:34.517</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1184</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -38,124 +38,78 @@
     <schema id="11" parent="2" name="information_schema">
       <ObjectId>12648</ObjectId>
     </schema>
-    <table id="12" parent="6" name="artist">
-      <ObjectId>24681</ObjectId>
-      <StateNumber>653</StateNumber>
-    </table>
-    <table id="13" parent="6" name="concert">
+    <table id="12" parent="6" name="concert">
       <ObjectId>24748</ObjectId>
-      <StateNumber>1139</StateNumber>
+      <StateNumber>1183</StateNumber>
     </table>
-    <table id="14" parent="6" name="concert_hall">
+    <table id="13" parent="6" name="concert_hall">
       <ObjectId>24693</ObjectId>
       <StateNumber>1135</StateNumber>
     </table>
-    <table id="15" parent="6" name="promotion_group">
+    <table id="14" parent="6" name="promotion_group">
       <ObjectId>24705</ObjectId>
       <StateNumber>1133</StateNumber>
     </table>
-    <table id="16" parent="6" name="purchases">
+    <table id="15" parent="6" name="purchases">
       <ObjectId>33976</ObjectId>
       <StateNumber>1173</StateNumber>
     </table>
-    <table id="17" parent="6" name="ticket">
+    <table id="16" parent="6" name="ticket">
       <ObjectId>24788</ObjectId>
       <StateNumber>1173</StateNumber>
     </table>
-    <table id="18" parent="6" name="users">
+    <table id="17" parent="6" name="users">
       <ObjectId>33969</ObjectId>
       <StateNumber>1173</StateNumber>
     </table>
-    <column id="19" parent="12" name="id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>633</StateNumber>
-    </column>
-    <column id="20" parent="12" name="name">
-      <Position>2</Position>
-      <DataType>varchar(200)|0</DataType>
-      <StateNumber>633</StateNumber>
-    </column>
-    <index id="21" parent="12" name="artist_pkey">
-      <ObjectId>24684</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="22" parent="12" name="artist_name_key">
-      <ObjectId>24686</ObjectId>
-      <ColNames>name</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="23" parent="12" name="artist_pkey">
-      <ObjectId>24685</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>artist_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <key id="24" parent="12" name="artist_name_key">
-      <ObjectId>24687</ObjectId>
-      <ColNames>name</ColNames>
-      <UnderlyingIndexName>artist_name_key</UnderlyingIndexName>
-    </key>
-    <column id="25" parent="13" name="id">
+    <column id="18" parent="12" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>650</StateNumber>
     </column>
-    <column id="26" parent="13" name="artist_id">
-      <Position>2</Position>
-      <DataType>integer|0</DataType>
-      <StateNumber>650</StateNumber>
-    </column>
-    <column id="27" parent="13" name="concert_hall_id">
+    <column id="19" parent="12" name="concert_hall_id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <StateNumber>650</StateNumber>
     </column>
-    <column id="28" parent="13" name="promotion_group_id">
+    <column id="20" parent="12" name="promotion_group_id">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>650</StateNumber>
     </column>
-    <column id="29" parent="13" name="concert_date">
+    <column id="21" parent="12" name="concert_date">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <StateNumber>650</StateNumber>
     </column>
-    <column id="30" parent="13" name="descriprion">
+    <column id="22" parent="12" name="descriprion">
       <Position>6</Position>
       <DataType>varchar(1000)|0</DataType>
       <StateNumber>1136</StateNumber>
     </column>
-    <column id="31" parent="13" name="age_constraint">
+    <column id="23" parent="12" name="age_constraint">
       <Position>7</Position>
       <DataType>integer|0</DataType>
       <StateNumber>1139</StateNumber>
     </column>
-    <index id="32" parent="13" name="concert_pkey">
+    <column id="24" parent="12" name="artist">
+      <Position>8</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1183</StateNumber>
+    </column>
+    <index id="25" parent="12" name="concert_pkey">
       <ObjectId>24751</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="33" parent="13" name="concert_pkey">
+    <key id="26" parent="12" name="concert_pkey">
       <ObjectId>24752</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>concert_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="34" parent="13" name="concert_artist_id_fkey">
-      <ObjectId>24753</ObjectId>
-      <ColNames>artist_id</ColNames>
-      <RefTableId>24681</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>artist</RefTableName>
-      <RefKeyName>artist_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>set-null</OnDelete>
-    </foreign-key>
-    <foreign-key id="35" parent="13" name="concert_concert_hall_id_fkey">
+    <foreign-key id="27" parent="12" name="concert_concert_hall_id_fkey">
       <ObjectId>24758</ObjectId>
       <ColNames>concert_hall_id</ColNames>
       <RefTableId>24693</RefTableId>
@@ -165,7 +119,7 @@
       <RefColNames>id</RefColNames>
       <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <foreign-key id="36" parent="13" name="concert_promotion_group_id_fkey">
+    <foreign-key id="28" parent="12" name="concert_promotion_group_id_fkey">
       <ObjectId>24763</ObjectId>
       <ColNames>promotion_group_id</ColNames>
       <RefTableId>24705</RefTableId>
@@ -175,128 +129,128 @@
       <RefColNames>id</RefColNames>
       <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <column id="37" parent="14" name="id">
+    <column id="29" parent="13" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>637</StateNumber>
     </column>
-    <column id="38" parent="14" name="name">
+    <column id="30" parent="13" name="name">
       <Position>2</Position>
       <DataType>varchar(200)|0</DataType>
       <StateNumber>637</StateNumber>
     </column>
-    <column id="39" parent="14" name="address">
+    <column id="31" parent="13" name="address">
       <Position>3</Position>
       <DataType>varchar(200)|0</DataType>
       <StateNumber>637</StateNumber>
     </column>
-    <column id="40" parent="14" name="telephone">
+    <column id="32" parent="13" name="telephone">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <StateNumber>1134</StateNumber>
     </column>
-    <column id="41" parent="14" name="email">
+    <column id="33" parent="13" name="email">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
       <StateNumber>1135</StateNumber>
     </column>
-    <index id="42" parent="14" name="concert_hall_pkey">
+    <index id="34" parent="13" name="concert_hall_pkey">
       <ObjectId>24696</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="43" parent="14" name="concert_hall_name_key">
+    <index id="35" parent="13" name="concert_hall_name_key">
       <ObjectId>24698</ObjectId>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="44" parent="14" name="concert_hall_pkey">
+    <key id="36" parent="13" name="concert_hall_pkey">
       <ObjectId>24697</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>concert_hall_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="45" parent="14" name="concert_hall_name_key">
+    <key id="37" parent="13" name="concert_hall_name_key">
       <ObjectId>24699</ObjectId>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>concert_hall_name_key</UnderlyingIndexName>
     </key>
-    <column id="46" parent="15" name="id">
+    <column id="38" parent="14" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>640</StateNumber>
     </column>
-    <column id="47" parent="15" name="name">
+    <column id="39" parent="14" name="name">
       <Position>2</Position>
       <DataType>varchar(200)|0</DataType>
       <StateNumber>640</StateNumber>
     </column>
-    <column id="48" parent="15" name="email">
+    <column id="40" parent="14" name="email">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
       <StateNumber>1132</StateNumber>
     </column>
-    <column id="49" parent="15" name="telephone">
+    <column id="41" parent="14" name="telephone">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <StateNumber>1133</StateNumber>
     </column>
-    <index id="50" parent="15" name="promotion_group_pkey">
+    <index id="42" parent="14" name="promotion_group_pkey">
       <ObjectId>24708</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="51" parent="15" name="promotion_group_name_key">
+    <index id="43" parent="14" name="promotion_group_name_key">
       <ObjectId>24710</ObjectId>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="52" parent="15" name="promotion_group_pkey">
+    <key id="44" parent="14" name="promotion_group_pkey">
       <ObjectId>24709</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>promotion_group_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="53" parent="15" name="promotion_group_name_key">
+    <key id="45" parent="14" name="promotion_group_name_key">
       <ObjectId>24711</ObjectId>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>promotion_group_name_key</UnderlyingIndexName>
     </key>
-    <column id="54" parent="16" name="id">
+    <column id="46" parent="15" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1173</StateNumber>
     </column>
-    <column id="55" parent="16" name="user_id">
+    <column id="47" parent="15" name="user_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <StateNumber>1173</StateNumber>
     </column>
-    <column id="56" parent="16" name="ticket_id">
+    <column id="48" parent="15" name="ticket_id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <StateNumber>1173</StateNumber>
     </column>
-    <column id="57" parent="16" name="amount">
+    <column id="49" parent="15" name="amount">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>1173</StateNumber>
     </column>
-    <index id="58" parent="16" name="purchases_pkey">
+    <index id="50" parent="15" name="purchases_pkey">
       <ObjectId>33979</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="59" parent="16" name="purchases_pkey">
+    <key id="51" parent="15" name="purchases_pkey">
       <ObjectId>33980</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>purchases_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="60" parent="16" name="purchases_user_id_fkey">
+    <foreign-key id="52" parent="15" name="purchases_user_id_fkey">
       <ObjectId>33981</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>33969</RefTableId>
@@ -305,7 +259,7 @@
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="61" parent="16" name="purchases_ticket_id_fkey">
+    <foreign-key id="53" parent="15" name="purchases_ticket_id_fkey">
       <ObjectId>33986</ObjectId>
       <ColNames>ticket_id</ColNames>
       <RefTableId>24788</RefTableId>
@@ -314,44 +268,44 @@
       <RefKeyName>ticket_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="62" parent="17" name="id">
+    <column id="54" parent="16" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>657</StateNumber>
     </column>
-    <column id="63" parent="17" name="concert_id">
+    <column id="55" parent="16" name="concert_id">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <StateNumber>657</StateNumber>
     </column>
-    <column id="64" parent="17" name="category">
+    <column id="56" parent="16" name="category">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
       <StateNumber>657</StateNumber>
     </column>
-    <column id="65" parent="17" name="cost">
+    <column id="57" parent="16" name="cost">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>657</StateNumber>
     </column>
-    <column id="66" parent="17" name="amount">
+    <column id="58" parent="16" name="amount">
       <Position>5</Position>
       <DataType>integer|0</DataType>
       <StateNumber>1167</StateNumber>
     </column>
-    <index id="67" parent="17" name="ticket_pkey">
+    <index id="59" parent="16" name="ticket_pkey">
       <ObjectId>24791</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="68" parent="17" name="ticket_pkey">
+    <key id="60" parent="16" name="ticket_pkey">
       <ObjectId>24792</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>ticket_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="69" parent="17" name="ticket_concert_id_fkey">
+    <foreign-key id="61" parent="16" name="ticket_concert_id_fkey">
       <ObjectId>24793</ObjectId>
       <ColNames>concert_id</ColNames>
       <RefTableId>24748</RefTableId>
@@ -361,45 +315,45 @@
       <RefColNames>id</RefColNames>
       <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <column id="70" parent="18" name="id">
+    <column id="62" parent="17" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1169</StateNumber>
     </column>
-    <column id="71" parent="18" name="login">
+    <column id="63" parent="17" name="login">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <StateNumber>1169</StateNumber>
     </column>
-    <column id="72" parent="18" name="password">
+    <column id="64" parent="17" name="password">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <StateNumber>1169</StateNumber>
     </column>
-    <column id="73" parent="18" name="role">
+    <column id="65" parent="17" name="role">
       <Position>4</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1169</StateNumber>
     </column>
-    <index id="74" parent="18" name="users_pkey">
+    <index id="66" parent="17" name="users_pkey">
       <ObjectId>33972</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="75" parent="18" name="users_login_key">
+    <index id="67" parent="17" name="users_login_key">
       <ObjectId>33974</ObjectId>
       <ColNames>login</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="76" parent="18" name="users_pkey">
+    <key id="68" parent="17" name="users_pkey">
       <ObjectId>33973</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="77" parent="18" name="users_login_key">
+    <key id="69" parent="17" name="users_login_key">
       <ObjectId>33975</ObjectId>
       <ColNames>login</ColNames>
       <UnderlyingIndexName>users_login_key</UnderlyingIndexName>

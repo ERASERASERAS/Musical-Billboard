@@ -4,9 +4,11 @@ com\ssau\dao\jdbc\JDBCPromotionGroupDAO.class
 com\ssau\model\PromotionGroup.class
 com\ssau\controllers\ConcertController.class
 com\ssau\controllers\ArtistController.class
+com\ssau\servlets\UpdServlet.class
 com\ssau\filter\LoginFilter.class
+com\ssau\servlets\TicketServlet.class
 com\ssau\dao\DAOFactory.class
-com\ssau\dao\jdbc\JDBCArtistDAO.class
+com\ssau\servlets\PurchaseServlet.class
 com\ssau\model\Purchase.class
 com\ssau\dao\TicketDAO.class
 com\ssau\servlets\MainServlet.class
@@ -14,10 +16,11 @@ com\ssau\dao\jdbc\JDBCConcertDAO.class
 com\ssau\model\ConcertDescription.class
 com\ssau\dao\jdbc\JDBCTicketDAO.class
 com\ssau\model\Concert.class
-com\ssau\dao\ArtistDAO.class
 com\ssau\dao\jdbc\JDBCUserDAO.class
+com\ssau\servlets\ConcertHallServlet.class
 com\ssau\controllers\TicketController.class
 com\ssau\dao\jdbc\JDBCConcertHallDAO.class
+com\ssau\servlets\PromoGroupServlet.class
 com\ssau\Main.class
 com\ssau\dao\JDBCDAOFactory.class
 com\ssau\model\Ticket.class
@@ -30,6 +33,7 @@ com\ssau\dao\PurchaseDAO.class
 com\ssau\servlets\ConcertServlet.class
 com\ssau\controllers\ConcertHallController.class
 com\ssau\dao\UserDAO.class
+com\ssau\filter\StatusFilter.class
 com\ssau\model\User.class
 com\ssau\servlets\LoginServlet.class
 com\ssau\dao\PromotionGroupDAO.class

@@ -10,4 +10,8 @@ public interface PurchaseDAO {
     Purchase getPurchaseById(int id);
 
     List<Purchase> getPurchasesForUser(int userId);
+
+    int getCountOfPurchases();
+
+    List<Purchase> getAll();
 }

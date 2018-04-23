@@ -5,6 +5,7 @@ C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\PromoGroupCont
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\JDBCDAOFactory.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\PurchaseDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\ConcertHall.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\UpdServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCPurchaseDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\LoginServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\HomeServlet.java
@@ -13,13 +14,14 @@ C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\ConcertDescription.j
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\ArtistController.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCPromotionGroupDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\ConcertDAO.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\PurchaseServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\ConcertServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Purchase.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\TicketController.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\ConcertHallServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCUserDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\Main.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\ConcertHallDAO.java
-C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\ArtistDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Concert.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\PromotionGroup.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\PromotionGroupDAO.java
@@ -27,9 +29,11 @@ C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\User.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Ticket.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\MainServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCTicketDAO.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\PromoGroupServlet.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\filter\StatusFilter.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Artist.java
-C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCArtistDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCConcertHallDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\DAOFactory.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\TicketServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\ConcertController.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\filter\LoginFilter.java

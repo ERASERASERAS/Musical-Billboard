@@ -5,6 +5,8 @@ import com.ssau.dao.DAOFactory;
 import com.ssau.model.Concert;
 
 import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,9 +20,11 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()) {
                 returnedConcert = new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                                                resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6));
+                                                new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(resultSet.getTimestamp(4).toString().substring(0,16)) , resultSet.getString(5), resultSet.getInt(6),resultSet.getString(7));
             }
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
             e.printStackTrace();
         }
         return returnedConcert;
@@ -35,7 +39,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
+                        resultSet.getDate(4), resultSet.getString(5), resultSet.getInt(6),resultSet.getString(7)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -57,7 +61,7 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
+                        resultSet.getDate(4), resultSet.getString(5), resultSet.getInt(6),resultSet.getString(7)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -70,10 +74,10 @@ public class JDBCConcertDAO implements ConcertDAO {
         List<Concert> returned = new LinkedList<Concert>();
         try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM concert");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM concert ORDER BY id ASC");
             while(resultSet.next()) {
                 returned.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7), resultSet.getString(6)));
+                        resultSet.getDate(4), resultSet.getString(5), resultSet.getInt(6),resultSet.getString(7)));;
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -90,12 +94,12 @@ public class JDBCConcertDAO implements ConcertDAO {
     public List<Concert> getConcertByArtist(String artistName) {
         List<Concert> returnedConcerts = new LinkedList<Concert>();
         try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM concert c JOIN artist a ON c.artist_id = a.id WHERE a.name = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM concert WHERE artist = ?");
             preparedStatement.setString(1, artistName);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
+                        resultSet.getDate(4), resultSet.getString(5), resultSet.getInt(6),resultSet.getString(7)));
             }
 
         } catch (SQLException e) {
@@ -114,11 +118,31 @@ public class JDBCConcertDAO implements ConcertDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
                 returnedConcerts.add(new Concert(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(3),
-                        resultSet.getInt(4), resultSet.getDate(5), resultSet.getInt(7),resultSet.getString(6)));
+                        resultSet.getDate(4), resultSet.getString(5), resultSet.getInt(6),resultSet.getString(7)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return returnedConcerts;
+    }
+
+    @Override
+    public int update(int id, int concertHallId, int promoGroupId, Date date, String description, int ageConstraint, String artist) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE concert SET concert_hall_id = ?, promotion_group_id = ?," +
+                    "concert_date = ?, descriprion = ?, age_constraint = ?, artist = ? WHERE id = ?");
+            preparedStatement.setInt(1, concertHallId);
+            preparedStatement.setInt(2, promoGroupId);
+            preparedStatement.setTimestamp(3, new Timestamp(date.getTime()));
+            preparedStatement.setString(4, description);
+            preparedStatement.setInt(5, ageConstraint);
+            preparedStatement.setString(6, description);
+            preparedStatement.setInt(7, id);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }

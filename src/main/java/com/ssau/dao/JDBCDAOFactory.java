@@ -22,9 +22,7 @@ public class JDBCDAOFactory extends DAOFactory{
 
     }
 
-    public ArtistDAO getArtistDAO() {
-        return new JDBCArtistDAO();
-    }
+
 
     public  Connection getConnection() throws SQLException {
        return  dataSource.getConnection();
@@ -48,5 +46,10 @@ public class JDBCDAOFactory extends DAOFactory{
 
     public UserDAO getUserDAO() {
         return new JDBCUserDAO();
+    }
+
+
+    public PurchaseDAO getPurchaseDAO() {
+        return new JDBCPurchaseDAO();
     }
 }

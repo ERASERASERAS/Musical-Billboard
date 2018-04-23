@@ -2,12 +2,11 @@ package com.ssau.dao.jdbc;
 
 import com.ssau.dao.ConcertHallDAO;
 import com.ssau.dao.DAOFactory;
+import com.ssau.model.Concert;
 import com.ssau.model.ConcertHall;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.LinkedList;
 import java.util.List;
 
 public class JDBCConcertHallDAO implements ConcertHallDAO {
@@ -29,7 +28,18 @@ public class JDBCConcertHallDAO implements ConcertHallDAO {
     }
 
     public List<ConcertHall> getAll() {
-        return null;
+        List<ConcertHall> concertHalls = new LinkedList<ConcertHall>();
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM concert_hall");
+            while(resultSet.next()) {
+                concertHalls.add(new ConcertHall(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3),
+                        resultSet.getString(5), resultSet.getString(4)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return concertHalls;
     }
 
     @Override

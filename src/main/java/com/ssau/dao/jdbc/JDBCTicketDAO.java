@@ -13,7 +13,19 @@ import java.util.List;
 
 public class JDBCTicketDAO implements TicketDAO {
     public Ticket getById(int id) {
-        return null;
+        Ticket returned = null;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM ticket WHERE id=?");
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()) {
+                returned = new Ticket(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(4),
+                        resultSet.getString(3), resultSet.getInt(5));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return returned;
     }
 
 
@@ -37,5 +49,19 @@ public class JDBCTicketDAO implements TicketDAO {
 
     public List<String> getAllTicketsCategories(int concertId) {
         return null;
+    }
+
+    @Override
+    public int updateAmount(int ticketId, int newAmount) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE ticket SET amount=? WHERE id=?");
+            preparedStatement.setInt(1, newAmount);
+            preparedStatement.setInt(2, ticketId);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }

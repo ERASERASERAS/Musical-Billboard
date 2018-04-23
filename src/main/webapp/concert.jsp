@@ -20,17 +20,28 @@
     Выступает: <c:out value="${concert_description.getArtistName()}"/><br/>
     Дата: <c:out value="${concert_description.getConcertDate()}"/><br/>
     Возрастное ограничение: <c:out value="${concert_description.getAgeConstraint()}"/><br/>
-    Где: <c:out value="${concert_description.getConcertHallName()}"/><br/>
+    Где: <a href="/concerthall?name=${concert_description.getConcertHallName()}"><c:out value="${concert_description.getConcertHallName()}"/></a><br/>
     Адрес: <c:out value="${concert_description.getAddress()}"/><br/>
-    Промо-группа: <c:out value="${concert_description.getPromoGroupName()}"/><br/>
+    Промо-группа: <a href="promogroup?name=${concert_description.getPromoGroupName()}"><c:out value="${concert_description.getPromoGroupName()}"/></a><br/>
     Описание: <c:out value="${concert_description.getDescription()}"/><br/>
     <p>Билеты</p>
     <c:forEach items="${concert_description.getTickets()}" var="ticket">
         <p>
             Тип: ${ticket.getCategory()} Цена: ${ticket.getCost()} Осталось: ${ticket.getAmount()}
-            <c:if test="${user != null}"><a href="">Купить</a></c:if>
+            <c:if test="${user != null}">
+                <form method="post" action="/concert?ticketId=${ticket.getId()}" >
+                    Количество: <input type="number" name="amount" /> <br/>
+                    <input type="submit" value="Купить"/>
+                </form>
+            </c:if>
         </p>
     </c:forEach>
+    <br/>
+    <c:if test="${user != null}">
+        <c:if test="${user.getRole().equals(\"ADMIN\")}">
+            <a href="/billboard/admin/update?entity=concert&id=${concert_description.getConcertId()}">Изменить</a>
+        </c:if>
+    </c:if>
 
 
     

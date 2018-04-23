@@ -4,10 +4,9 @@ import com.ssau.dao.DAOFactory;
 import com.ssau.dao.PromotionGroupDAO;
 import com.ssau.model.PromotionGroup;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class JDBCPromotionGroupDAO implements PromotionGroupDAO {
     public PromotionGroup getById(int id) {
@@ -40,5 +39,21 @@ public class JDBCPromotionGroupDAO implements PromotionGroupDAO {
             e.printStackTrace();
         }
         return returned;
+    }
+
+    @Override
+    public List<PromotionGroup> getAll() {
+        List<PromotionGroup> promotionGroups = new LinkedList<PromotionGroup>();
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM promotion_group");
+            while(resultSet.next()) {
+                promotionGroups.add(new PromotionGroup(resultSet.getInt(1), resultSet.getString(2),
+                        resultSet.getString(3), resultSet.getString(4)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return promotionGroups;
     }
 }

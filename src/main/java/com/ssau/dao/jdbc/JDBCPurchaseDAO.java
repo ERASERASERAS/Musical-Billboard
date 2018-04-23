@@ -4,10 +4,7 @@ import com.ssau.dao.DAOFactory;
 import com.ssau.dao.PurchaseDAO;
 import com.ssau.model.Purchase;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -49,7 +46,7 @@ public class JDBCPurchaseDAO implements PurchaseDAO{
     public List<Purchase> getPurchasesForUser(int userId) {
         List<Purchase> returned = new LinkedList<Purchase>();
         try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM purchases WHEN  user_id = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM purchases WHERE  user_id = ?");
             preparedStatement.setInt(1, userId);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
@@ -59,5 +56,35 @@ public class JDBCPurchaseDAO implements PurchaseDAO{
             e.printStackTrace();
         }
         return returned;
+    }
+
+    public int getCountOfPurchases() {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM purchases");
+
+            result = resultSet.getInt(1);
+            int r = 5;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  result;
+    }
+
+    @Override
+    public List<Purchase> getAll() {
+        List<Purchase> purchases = new LinkedList<Purchase>();
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM purchases");
+            while(resultSet.next()) {
+                purchases.add(new Purchase(resultSet.getInt(1), resultSet.getInt(2),resultSet.getInt(3), resultSet.getInt(4)));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return purchases;
     }
 }

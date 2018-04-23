@@ -14,6 +14,7 @@
 
     <c:if test="${user != null}">
         <span>
+            <a href="/billboard/home" >Личный кабинет</a>
             <a href="/login?logout=true">Выход</a>
         </span>
     </c:if>

@@ -3,18 +3,18 @@ package com.ssau.model;
 import java.util.Date;
 
 public class Concert {
-    private int id,artistId, concertHallId, promotionGroupId, ageConstraint;
+    private int id, concertHallId, promotionGroupId, ageConstraint;
     private Date concertDate;
-    private String descriprion;
+    private String descriprion, artist;
 
-    public Concert(int id, int artistId, int concertHallId, int promotionGroupId, Date concertDate, int ageConstraint, String descriprion) {
+    public Concert(int id, int concertHallId, int promotionGroupId, Date concertDate, String descriprion, int ageConstraint, String artist) {
         this.id = id;
-        this.artistId = artistId;
         this.concertHallId = concertHallId;
         this.promotionGroupId = promotionGroupId;
         this.concertDate = concertDate;
         this.ageConstraint = ageConstraint;
         this.descriprion = descriprion;
+        this.artist = artist;
     }
 
     public int getId() {
@@ -25,12 +25,12 @@ public class Concert {
         this.id = id;
     }
 
-    public int getArtistId() {
-        return artistId;
+    public String getArtist() {
+        return artist;
     }
 
-    public void setArtistId(int artistId) {
-        this.artistId = artistId;
+    public void setArtist(String artist) {
+        this.artist = artist;
     }
 
     public int getConcertHallId() {
