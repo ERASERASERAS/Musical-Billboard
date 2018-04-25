@@ -112,6 +112,16 @@
         <servlet-name>UpdServlet</servlet-name>
         <url-pattern>/billboard/admin/update</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>com.ssau.servlets.AddServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/billboard/admin/add</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>

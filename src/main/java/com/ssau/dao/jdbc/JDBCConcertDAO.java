@@ -145,4 +145,19 @@ public class JDBCConcertDAO implements ConcertDAO {
         }
         return result;
     }
+
+    @Override
+    public int delete(int id) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM concert WHERE id=?");
+            preparedStatement.setInt(1, id);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+
 }

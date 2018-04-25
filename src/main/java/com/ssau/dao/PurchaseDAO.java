@@ -14,4 +14,6 @@ public interface PurchaseDAO {
     int getCountOfPurchases();
 
     List<Purchase> getAll();
+
+    int delete(int id);
 }

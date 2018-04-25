@@ -39,7 +39,7 @@ public class ConcertServlet extends HttpServlet{
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        concertDescription.setConcertDate(formatDate);
+        concertDescription.setConcertDate(concert.getConcertDate());
         concertDescription.setConcertId(id);
         concertDescription.setAddress(DAOFactory.getINSTANCE().getConcertHallDAO().getById(concert.getConcertHallId()).getAddress());
         concertDescription.setAgeConstraint(concert.getAgeConstraint());

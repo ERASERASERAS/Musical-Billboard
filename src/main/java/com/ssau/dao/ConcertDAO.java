@@ -17,4 +17,5 @@ public interface ConcertDAO {
 
     List<Concert> getConcertByConcertHall(int concertHallId) ;
     int update(int id, int concertHallId, int promoGrouppId, Date date, String description, int ageConstraint, String artist);
+    int delete(int id);
 }

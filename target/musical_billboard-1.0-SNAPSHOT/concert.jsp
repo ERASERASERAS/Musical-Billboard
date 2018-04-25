@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
-    <title></title>
+    <title>Концерт</title>
+    <link rel="stylesheet" href="styles/w3.css">
 </head>
 <body>
     <c:if test="${user == null}">
@@ -25,6 +26,11 @@
     Промо-группа: <a href="promogroup?name=${concert_description.getPromoGroupName()}"><c:out value="${concert_description.getPromoGroupName()}"/></a><br/>
     Описание: <c:out value="${concert_description.getDescription()}"/><br/>
     <p>Билеты</p>
+    <c:if test="${user != null}">
+        <c:if test="${user.getRole().equals(\"ADMIN\")}">
+            <a href="/billboard/admin/add?entity=ticket&concertId=${concert_description.getConcertId()}"> Добавить билет</a>
+        </c:if>
+    </c:if>
     <c:forEach items="${concert_description.getTickets()}" var="ticket">
         <p>
             Тип: ${ticket.getCategory()} Цена: ${ticket.getCost()} Осталось: ${ticket.getAmount()}
@@ -33,13 +39,19 @@
                     Количество: <input type="number" name="amount" /> <br/>
                     <input type="submit" value="Купить"/>
                 </form>
+
+                <c:if test="${user != null}">
+                    <c:if test="${user.getRole().equals(\"ADMIN\")}">
+                        <a href="/billboard/admin/update?entity=ticket&id=${concert_description.getConcertId()}"> Отредактировать билет</a>
+                    </c:if>
+                </c:if>
             </c:if>
         </p>
     </c:forEach>
     <br/>
     <c:if test="${user != null}">
         <c:if test="${user.getRole().equals(\"ADMIN\")}">
-            <a href="/billboard/admin/update?entity=concert&id=${concert_description.getConcertId()}">Изменить</a>
+            <a href="/billboard/admin/update?entity=concert&id=${concert_description.getConcertId()}">Отредактировать концерт</a>
         </c:if>
     </c:if>
 

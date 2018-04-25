@@ -56,4 +56,50 @@ public class JDBCPromotionGroupDAO implements PromotionGroupDAO {
         }
         return promotionGroups;
     }
+
+    @Override
+    public int update(int id, String name, String telephone, String email) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE promotion_group " +
+                    "SET name=?, email=?, telephone=? WHERE id=?");
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2, telephone);
+            preparedStatement.setString(3, email);
+            preparedStatement.setInt(4, id);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  result;
+    }
+
+    @Override
+    public int add(String name, String telephone, String email) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO promotion_group VALUES (?,?,?,?)");
+            preparedStatement.setInt(1, getAll().size() + 1);
+            preparedStatement.setString(2, name);
+            preparedStatement.setString(3,email);
+            preparedStatement.setString(4, telephone);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    @Override
+    public int delete(int id) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM promotion_group WHERE id=?");
+            preparedStatement.setInt(1, id);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

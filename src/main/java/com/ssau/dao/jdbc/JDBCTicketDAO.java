@@ -4,10 +4,7 @@ import com.ssau.dao.DAOFactory;
 import com.ssau.dao.TicketDAO;
 import com.ssau.model.Ticket;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -58,6 +55,82 @@ public class JDBCTicketDAO implements TicketDAO {
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE ticket SET amount=? WHERE id=?");
             preparedStatement.setInt(1, newAmount);
             preparedStatement.setInt(2, ticketId);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    @Override
+    public int update(int ticketId, int concertId, String category, int cost, int amount) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("UPDATE ticket SET " +
+                    "concert_id=?, category=?,cost=?,amount=? WHERE id=?");
+            preparedStatement.setInt(1, concertId);
+            preparedStatement.setString(2, category);
+            preparedStatement.setInt(3,concertId);
+            preparedStatement.setInt(4, amount);
+            preparedStatement.setInt(5, ticketId);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    @Override
+    public int add(int concertId, String category, int cost, int amount) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO ticket VALUES (?,?,?,?,?)");
+            preparedStatement.setInt(1, getAll().size() + 1);
+            preparedStatement.setInt(2, concertId);
+            preparedStatement.setString(3, category);
+            preparedStatement.setInt(4, cost);
+            preparedStatement.setInt(5, amount);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    @Override
+    public List<Ticket> getAll() {
+        List<Ticket> tickets = new LinkedList<Ticket>();
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()){
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM ticket");
+            while(resultSet.next()) {
+                tickets.add(new Ticket(resultSet.getInt(1), resultSet.getInt(2), resultSet.getInt(4),
+                        resultSet.getString(3), resultSet.getInt(5)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return tickets;
+    }
+    @Override
+    public int delete(int id) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM ticket WHERE id=?");
+            preparedStatement.setInt(1, id);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    @Override
+    public int deleteByConcertId(int concertId) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM ticket WHERE concert_id=?");
+            preparedStatement.setInt(1, concertId);
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -34,6 +34,7 @@ C:\Users\yar\musical_billboard\src\main\java\com\ssau\filter\StatusFilter.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Artist.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCConcertHallDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\DAOFactory.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\AddServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\TicketServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\ConcertController.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\filter\LoginFilter.java

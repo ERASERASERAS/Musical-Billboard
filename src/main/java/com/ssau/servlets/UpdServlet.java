@@ -3,6 +3,8 @@ package com.ssau.servlets;
 import com.ssau.dao.DAOFactory;
 import com.ssau.model.ConcertHall;
 import com.ssau.model.PromotionGroup;
+import com.ssau.model.Ticket;
+import com.sun.corba.se.impl.presentation.rmi.DynamicAccessPermission;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,13 +20,20 @@ public class UpdServlet extends HttpServlet{
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String entity = req.getParameter("entity");
-        if(entity.equals("concert")) {
-            try {
+        try {
+            if(entity.equals("concert")) {
                 updateConcert(req);
-            } catch (ParseException e) {
-                e.printStackTrace();
+            } else if(entity.equals("ticket")) {
+                updateTicket(req);
+            } else if(entity.equals("concert_hall")) {
+                updateConcertHall(req);
+            } else if(entity.equals("promo_group")) {
+                updatePromoGroup(req);
             }
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
+        resp.sendRedirect("/");
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,9 +45,17 @@ public class UpdServlet extends HttpServlet{
             req.getSession().setAttribute("concert_halls", concertHalls);
             req.getRequestDispatcher("update_concert.jsp").forward(req, resp);
         } else if (entity.equals("promo_group")) {
+            int id = Integer.parseInt(req.getParameter("id"));
+            req.getSession().setAttribute("promo_group", DAOFactory.getINSTANCE().getPromotionGroupDAO().getById(id));
             req.getRequestDispatcher("update_promo_group.jsp").forward(req,resp);
         } else if (entity.equals("concert_hall")) {
+            int id = Integer.parseInt(req.getParameter("id"));
+            req.getSession().setAttribute("concert_hall", DAOFactory.getINSTANCE().getConcertHallDAO().getById(id));
             req.getRequestDispatcher("update_concert_hall.jsp").forward(req, resp);
+        } else if (entity.equals("ticket")) {
+            int id = Integer.parseInt(req.getParameter("id"));
+            req.getSession().setAttribute("ticket", DAOFactory.getINSTANCE().getTicketDAO().getById(id));
+            req.getRequestDispatcher("update_ticket.jsp").forward(req, resp);
         }
     }
 
@@ -53,5 +70,31 @@ public class UpdServlet extends HttpServlet{
         int concertHallId = DAOFactory.getINSTANCE().getConcertHallDAO().getByName(request.getParameter("concert_hall_select")).getId();
         String description = request.getParameter("descr");
         DAOFactory.getINSTANCE().getConcertDAO().update(id, concertHallId, promoGroupId, date, description, ageConstraint, artist);
+    }
+
+    private void updateTicket(HttpServletRequest request) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        int concertId = Integer.parseInt(request.getParameter("concertId"));
+        String category = request.getParameter("category");
+        int cost = Integer.parseInt(request.getParameter("cost"));
+        int amount = Integer.parseInt(request.getParameter("amount"));
+        DAOFactory.getINSTANCE().getTicketDAO().update(id, concertId, category, cost, amount);
+    }
+
+    private void updatePromoGroup(HttpServletRequest request) {
+        int id = Integer.parseInt("id");
+        String name = request.getParameter("name");
+        String telephone = request.getParameter("telephone");
+        String email = request.getParameter("email");
+        DAOFactory.getINSTANCE().getPromotionGroupDAO().update(id, name, telephone, email);
+    }
+
+    private void updateConcertHall(HttpServletRequest request) {
+        int id = Integer.parseInt("id");
+        String name = request.getParameter("name");
+        String address = request.getParameter("address");
+        String telephone = request.getParameter("telephone");
+        String email = request.getParameter("email");
+        DAOFactory.getINSTANCE().getConcertHallDAO().update(id, name ,address, telephone, email);
     }
 }
