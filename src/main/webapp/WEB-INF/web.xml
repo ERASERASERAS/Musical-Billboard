@@ -57,6 +57,16 @@
         <servlet-class>com.ssau.servlets.ConcertServlet</servlet-class>
     </servlet>
     
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.ssau.servlets.DeleteServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/billboard/admin/delete</url-pattern>
+    </servlet-mapping>
+    
     <servlet-mapping>
         <servlet-name>ConcertServlet</servlet-name>
         <url-pattern>/concert</url-pattern>

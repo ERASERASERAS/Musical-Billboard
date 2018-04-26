@@ -74,11 +74,11 @@ public class UpdServlet extends HttpServlet{
 
     private void updateTicket(HttpServletRequest request) {
         int id = Integer.parseInt(request.getParameter("id"));
-        int concertId = Integer.parseInt(request.getParameter("concertId"));
+
         String category = request.getParameter("category");
         int cost = Integer.parseInt(request.getParameter("cost"));
         int amount = Integer.parseInt(request.getParameter("amount"));
-        DAOFactory.getINSTANCE().getTicketDAO().update(id, concertId, category, cost, amount);
+        DAOFactory.getINSTANCE().getTicketDAO().update(id, category, cost, amount);
     }
 
     private void updatePromoGroup(HttpServletRequest request) {

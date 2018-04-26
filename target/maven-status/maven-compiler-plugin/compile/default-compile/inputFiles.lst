@@ -16,6 +16,7 @@ C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\jdbc\JDBCPromotionGrou
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\dao\ConcertDAO.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\PurchaseServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\ConcertServlet.java
+C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\DeleteServlet.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\model\Purchase.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\controllers\TicketController.java
 C:\Users\yar\musical_billboard\src\main\java\com\ssau\servlets\ConcertHallServlet.java

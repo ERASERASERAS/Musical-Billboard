@@ -7,55 +7,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccfb330b-37bb-4edc-ba0f-4dcd17e00ea7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/f.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/f.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependencies.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependency-convergence.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependency-info.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/external.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/plugin-management.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/plugins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-info.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-summary.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/ConcertDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/ConcertDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/ConcertHallDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/ConcertHallDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/PromotionGroupDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/PromotionGroupDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/PurchaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/PurchaseDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/TicketDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/TicketDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCConcertDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCConcertDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCConcertHallDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCConcertHallDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCPurchaseDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCPurchaseDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCTicketDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/dao/jdbc/JDBCTicketDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/servlets/ConcertServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/servlets/ConcertServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/servlets/AddServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/servlets/AddServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssau/servlets/UpdServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/ssau/servlets/UpdServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/ConcertDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/ConcertDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/ConcertHallDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/ConcertHallDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/PromotionGroupDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/PromotionGroupDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/PurchaseDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/PurchaseDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/TicketDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/TicketDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCConcertDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCConcertDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCConcertHallDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCConcertHallDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCPurchaseDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCPurchaseDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCTicketDAO.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/dao/jdbc/JDBCTicketDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/servlets/ConcertServlet.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/servlets/ConcertServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/servlets/AddServlet.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/servlets/AddServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/servlets/UpdServlet.class" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/classes/com/ssau/servlets/UpdServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertHallDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertHallDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/PromotionGroupDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/PromotionGroupDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/PurchaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/PurchaseDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertHallDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertHallDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPurchaseDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPurchaseDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/MainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/MainServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert_hall.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert_hall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_promo_group.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_promo_group.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_ticket.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_ticket.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert_hall.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert_hall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_promo_group.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_promo_group.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_ticket.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_ticket.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/billboard/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/billboard/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/concert.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/concert.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/concerthall.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/concerthall.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/promogroup.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/promogroup.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_concert.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_concert.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_concert_hall.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_concert_hall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_promo_group.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_promo_group.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_ticket.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/add_ticket.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_concert.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_concert.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_concert_hall.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_concert_hall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_promo_group.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_promo_group.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_ticket.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/admin/update_ticket.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/home.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/billboard/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/concert.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/concert.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/concerthall.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/concerthall.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/login.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/promogroup.jsp" afterPath="$PROJECT_DIR$/target/musical_billboard-1.0-SNAPSHOT/promogroup.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,61 +172,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="JDBCTicketDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            <state relative-caret-position="227">
+              <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+              <folding>
+                <element signature="e#3967#3975#0" expanded="true" />
+                <marker date="1524785906859" expanded="true" signature="471:502" ph="SELECT * FRO... ticket" />
+                <marker date="1524785906859" expanded="true" signature="1229:1270" ph="SELECT * FRO... ticket" />
+                <marker date="1524785906859" expanded="true" signature="1229:1272" ph="SELECT * FRO... ticket" />
+                <marker date="1524785906859" expanded="true" signature="2100:2137" ph="UPDATE ticke... " />
+                <marker date="1524785906859" expanded="true" signature="2683:2700" ph="UPDATE ticke... " />
+                <marker date="1524785906859" expanded="true" signature="2683:2763" ph="UPDATE ticke... " />
+                <marker date="1524785906859" expanded="true" signature="3404:3441" ph="INSERT INTO ticket... " />
+                <marker date="1524785906859" expanded="true" signature="4180:4200" ph="SELECT * FRO... ticket" />
+                <marker date="1524785906859" expanded="true" signature="4766:4795" ph="DELETE FROM " />
+                <marker date="1524785906859" expanded="true" signature="5255:5292" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConcertDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" column="113" lean-forward="false" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <file leaf-file-name="concert.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/concert.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="323">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PromoGroupServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/PromoGroupServlet.java">
+      <file leaf-file-name="DeleteServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/DeleteServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="promogroup.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/promogroup.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="concerthall.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/concerthall.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/MainServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="146">
+              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,39 +229,65 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+            <state relative-caret-position="150">
+              <caret line="66" column="38" lean-forward="false" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="f.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/f.html">
+      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/HomeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="235">
+              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="w3.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/w3.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="concert.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/concert.jsp">
+      <file leaf-file-name="TicketServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/TicketServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="48" />
+              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="62" column="124" lean-forward="false" selection-start-line="62" selection-start-column="124" selection-end-line="62" selection-end-column="124" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="80" column="51" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -246,9 +299,9 @@
       <list>
         <option value="jsf" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -258,6 +311,7 @@
       <find>home</find>
       <find>update</find>
       <find>welc</find>
+      <find>concert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -271,20 +325,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/model/Purchase.java" />
         <option value="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar!/javax/servlet/jsp/jstl/core/LoopTag.class" />
         <option value="$PROJECT_DIR$/src/main/webapp/htmlfile.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/authorization_info.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/billboard/buy_ticket.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/model/ConcertDescription.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/addConcert.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/PurchaseServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/TicketServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/concerthall.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/promogroup.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertHallServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/PromoGroupServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/updateConcert.jsp" />
@@ -296,32 +345,37 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCArtistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/model/Concert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert_hall.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_promo_group.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_ticket.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_promo_group.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert_hall.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_ticket.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/PurchaseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/PromotionGroupDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertHallDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertHallDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPromotionGroupDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPurchaseDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/concert.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/f.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/MainServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/promogroup.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/concerthall.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_ticket.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_promo_group.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert_hall.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_ticket.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_promo_group.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert_hall.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/PurchaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPurchaseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/concert.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssau/servlets/DeleteServlet.java" />
       </list>
     </option>
   </component>
@@ -359,7 +413,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-17" />
     <option name="y" value="1" />
     <option name="width" value="1346" />
@@ -434,6 +488,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ssau" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="musical_billboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="musical_billboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ssau" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="musical_billboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="musical_billboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ssau" type="462c0819:PsiDirectoryNode" />
               <item name="servlets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -450,6 +523,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="billboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="musical_billboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="musical_billboard" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="billboard" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="musical_billboard" type="b2602c69:ProjectViewProjectNode" />
@@ -712,15 +794,16 @@
       <workItem from="1523468902688" duration="30305000" />
       <workItem from="1524084769627" duration="31954000" />
       <workItem from="1524173102418" duration="19775000" />
-      <workItem from="1524401479098" duration="48883000" />
+      <workItem from="1524401479098" duration="66328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156338000" />
+    <option name="totallyTimeSpent" value="173783000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -728,7 +811,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1376702" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20953101" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12254161" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -739,10 +822,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36988544" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36497545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1860817" sideWeight="0.48958334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.48958334" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27155825" sideWeight="0.5104167" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -756,6 +839,41 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1376702" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3633388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36497545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2065053" sideWeight="0.48958334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27155825" sideWeight="0.5104167" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1038,38 +1156,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/model/ConcertHall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertHallServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/model/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/authorization_info.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1085,16 +1171,6 @@
           <folding>
             <element signature="e#1004#1005#0" expanded="false" />
             <element signature="e#1040#1041#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1174,44 +1250,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="41" column="66" lean-forward="false" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/TicketServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_promo_group.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="89" lean-forward="false" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert_hall.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="81" lean-forward="false" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -1230,80 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert_hall.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_promo_group.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_ticket.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/PurchaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/PromotionGroupDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1317,38 +1285,6 @@
         <state relative-caret-position="170">
           <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="148" column="3" lean-forward="false" selection-start-line="148" selection-start-column="3" selection-end-line="159" selection-end-column="5" />
-          <folding>
-            <marker date="1524666679737" expanded="true" signature="575:609" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="1599:1655" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="2642:2702" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="2642:2760" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="3644:3665" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="3644:3677" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="3644:3681" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="4494:4532" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="5370:5423" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="5370:5484" ph="SELECT * FRO... concert" />
-            <marker date="1524666679737" expanded="true" signature="6341:6379" ph="UPDATE conce... " />
-            <marker date="1524666679737" expanded="true" signature="6341:6404" ph="UPDATE conce... " />
-            <marker date="1524666679737" expanded="true" signature="6341:6507" ph="UPDATE conce... " />
-            <marker date="1524666679737" expanded="true" signature="6341:6508" ph="UPDATE conce... " />
-            <marker date="1524666679737" expanded="true" signature="7308:7338" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1387,67 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPurchaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="94" column="100" lean-forward="false" selection-start-line="94" selection-start-column="100" selection-end-line="94" selection-end-column="100" />
-          <folding>
-            <marker date="1524666679786" expanded="true" signature="524:561" ph="INSERT INTO purchases... " />
-            <marker date="1524666679786" expanded="true" signature="1175:1211" ph="SELECT * FRO... purchases" />
-            <marker date="1524666679786" expanded="true" signature="1906:1948" ph="SELECT * FRO... purchases" />
-            <marker date="1524666679786" expanded="true" signature="2623:2653" ph="SELECT COUNT... purchases" />
-            <marker date="1524666679786" expanded="true" signature="3148:3171" ph="SELECT * FRO... purchases" />
-            <marker date="1524666679786" expanded="true" signature="3696:3728" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="138" column="5" lean-forward="false" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-          <folding>
-            <element signature="e#4051#4059#0" expanded="true" />
-            <marker date="1524666679716" expanded="true" signature="471:502" ph="SELECT * FRO... ticket" />
-            <marker date="1524666679716" expanded="true" signature="1229:1270" ph="SELECT * FRO... ticket" />
-            <marker date="1524666679716" expanded="true" signature="1229:1272" ph="SELECT * FRO... ticket" />
-            <marker date="1524666679716" expanded="true" signature="2100:2137" ph="UPDATE ticke... " />
-            <marker date="1524666679716" expanded="true" signature="2697:2714" ph="UPDATE ticke... " />
-            <marker date="1524666679716" expanded="true" signature="2697:2791" ph="UPDATE ticke... " />
-            <marker date="1524666679716" expanded="true" signature="3488:3525" ph="INSERT INTO ticket... " />
-            <marker date="1524666679716" expanded="true" signature="4264:4284" ph="SELECT * FRO... ticket" />
-            <marker date="1524666679716" expanded="true" signature="4850:4879" ph="DELETE FROM " />
-            <marker date="1524666679716" expanded="true" signature="5339:5376" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_ticket.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="42" column="149" lean-forward="false" selection-start-line="42" selection-start-column="149" selection-end-line="42" selection-end-column="149" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/concert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/w3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1464,40 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/promogroup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/concerthall.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/MainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/PromoGroupServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1506,19 +1347,300 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        <state relative-caret-position="-108">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertHallServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCConcertDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="172" column="49" lean-forward="false" selection-start-line="172" selection-start-column="49" selection-end-line="172" selection-end-column="49" />
+          <folding>
+            <marker date="1524784141802" expanded="true" signature="575:609" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="1599:1655" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="2642:2702" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="2642:2760" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="3644:3665" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="3644:3677" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="3644:3681" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="4494:4532" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="5370:5423" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="5370:5484" ph="SELECT * FRO... concert" />
+            <marker date="1524784141802" expanded="true" signature="6341:6379" ph="UPDATE conce... " />
+            <marker date="1524784141802" expanded="true" signature="6341:6404" ph="UPDATE conce... " />
+            <marker date="1524784141802" expanded="true" signature="6341:6507" ph="UPDATE conce... " />
+            <marker date="1524784141802" expanded="true" signature="6341:6508" ph="UPDATE conce... " />
+            <marker date="1524784141802" expanded="true" signature="7308:7338" ph="DELETE FROM " />
+            <marker date="1524784141802" expanded="true" signature="7871:7913" ph="INSERT INTO concert... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/promogroup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="289">
+          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/concerthall.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_ticket.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_promo_group.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert_hall.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/update_concert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_ticket.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_promo_group.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert_hall.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/billboard/admin/add_concert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.0/javax.servlet-api-4.0.0.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/ConcertServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/PurchaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCPurchaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="109" column="55" lean-forward="false" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
+          <folding>
+            <marker date="1524785433887" expanded="true" signature="524:561" ph="INSERT INTO purchases... " />
+            <marker date="1524785433887" expanded="true" signature="1175:1211" ph="SELECT * FRO... purchases" />
+            <marker date="1524785433887" expanded="true" signature="1906:1948" ph="SELECT * FRO... purchases" />
+            <marker date="1524785433887" expanded="true" signature="2623:2653" ph="SELECT COUNT... purchases" />
+            <marker date="1524785433887" expanded="true" signature="3148:3171" ph="SELECT * FRO... purchases" />
+            <marker date="1524785433887" expanded="true" signature="3696:3728" ph="DELETE FROM " />
+            <marker date="1524785433887" expanded="true" signature="4186:4225" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/UpdServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="80" column="51" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/TicketDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/jdbc/JDBCTicketDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="73" column="50" lean-forward="false" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+          <folding>
+            <element signature="e#3967#3975#0" expanded="true" />
+            <marker date="1524785906859" expanded="true" signature="471:502" ph="SELECT * FRO... ticket" />
+            <marker date="1524785906859" expanded="true" signature="1229:1270" ph="SELECT * FRO... ticket" />
+            <marker date="1524785906859" expanded="true" signature="1229:1272" ph="SELECT * FRO... ticket" />
+            <marker date="1524785906859" expanded="true" signature="2100:2137" ph="UPDATE ticke... " />
+            <marker date="1524785906859" expanded="true" signature="2683:2700" ph="UPDATE ticke... " />
+            <marker date="1524785906859" expanded="true" signature="2683:2763" ph="UPDATE ticke... " />
+            <marker date="1524785906859" expanded="true" signature="3404:3441" ph="INSERT INTO ticket... " />
+            <marker date="1524785906859" expanded="true" signature="4180:4200" ph="SELECT * FRO... ticket" />
+            <marker date="1524785906859" expanded="true" signature="4766:4795" ph="DELETE FROM " />
+            <marker date="1524785906859" expanded="true" signature="5255:5292" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/dao/ConcertDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="113" lean-forward="false" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/TicketServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/AddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="62" column="124" lean-forward="false" selection-start-line="62" selection-start-column="124" selection-end-line="62" selection-end-column="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="66" column="38" lean-forward="false" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/concert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssau/servlets/DeleteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -100,4 +100,17 @@ public class JDBCPurchaseDAO implements PurchaseDAO{
         }
         return result;
     }
+
+    @Override
+    public int deleteByTicketId(int ticketId) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM purchases WHERE ticket_id=?");
+            preparedStatement.setInt(1, ticketId);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e ) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

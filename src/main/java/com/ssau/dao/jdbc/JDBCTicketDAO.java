@@ -63,16 +63,15 @@ public class JDBCTicketDAO implements TicketDAO {
     }
 
     @Override
-    public int update(int ticketId, int concertId, String category, int cost, int amount) {
+    public int update(int ticketId,  String category, int cost, int amount) {
         int result = 0;
         try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE ticket SET " +
-                    "concert_id=?, category=?,cost=?,amount=? WHERE id=?");
-            preparedStatement.setInt(1, concertId);
-            preparedStatement.setString(2, category);
-            preparedStatement.setInt(3,concertId);
-            preparedStatement.setInt(4, amount);
-            preparedStatement.setInt(5, ticketId);
+                    "category=?,cost=?,amount=? WHERE id=?");
+            preparedStatement.setString(1, category);
+            preparedStatement.setInt(2, cost);
+            preparedStatement.setInt(3, amount);
+            preparedStatement.setInt(4, ticketId);
             result = preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -159,5 +159,24 @@ public class JDBCConcertDAO implements ConcertDAO {
         return result;
     }
 
+    @Override
+    public int add(int promoGroupId, int concertHallId, int ageConstraint, String artist, Date date, String description) {
+        int result = 0;
+        try(Connection connection = DAOFactory.getINSTANCE().getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO concert VALUES (?,?,?,?,?,?,?)");
+            preparedStatement.setInt(1, getAll().size() + 1);
+            preparedStatement.setInt(2, concertHallId);
+            preparedStatement.setInt(3, promoGroupId);
+            preparedStatement.setTimestamp(4, new Timestamp(date.getTime()));
+            preparedStatement.setString(5, description);
+            preparedStatement.setInt(6, ageConstraint);
+            preparedStatement.setString(7, artist);
+            result = preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 
 }

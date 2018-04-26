@@ -16,4 +16,6 @@ public interface PurchaseDAO {
     List<Purchase> getAll();
 
     int delete(int id);
+
+    int deleteByTicketId(int ticketId);
 }

@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class AddServlet extends HttpServlet {
@@ -46,7 +49,18 @@ public class AddServlet extends HttpServlet {
     }
 
     private void addConcert(HttpServletRequest request) {
-
+        int promoGroupId = DAOFactory.getINSTANCE().getPromotionGroupDAO().getByName(request.getParameter("promo_group_select")).getId();
+        int concertHallId = DAOFactory.getINSTANCE().getConcertHallDAO().getByName(request.getParameter("concert_hall_select")).getId();
+        String description = request.getParameter("descr");
+        int ageConstraint = Integer.parseInt(request.getParameter("age_constr"));
+        String artist = request.getParameter("artist");
+        Date date = null;
+        try {
+            date = new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(request.getParameter("date").replaceFirst("T"," "));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        DAOFactory.getINSTANCE().getConcertDAO().add(promoGroupId, concertHallId, ageConstraint, artist, date, description);
     }
 
     private void addTicket(HttpServletRequest request) {

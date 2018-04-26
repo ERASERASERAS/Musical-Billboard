@@ -8,6 +8,7 @@ com\ssau\servlets\UpdServlet.class
 com\ssau\filter\LoginFilter.class
 com\ssau\servlets\TicketServlet.class
 com\ssau\dao\DAOFactory.class
+com\ssau\servlets\DeleteServlet.class
 com\ssau\servlets\PurchaseServlet.class
 com\ssau\servlets\AddServlet.class
 com\ssau\model\Purchase.class
